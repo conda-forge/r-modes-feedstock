@@ -3,13 +3,11 @@ About r-modes
 
 Home: http://www.sdeevi.com/modes_package https://github.com/sathish-deevi/modes-Package/
 
-Package license: CC BY-NC-SA 4.0
+Package license: CC-BY-NC-SA-4.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-modes-feedstock/blob/master/LICENSE.txt)
 
 Summary: Designed with a dual purpose of accurately estimating the mode (or modes) as well as characterizing the modality of data. The specific application area includes complex or mixture distributions particularly in a big data environment. The heterogeneous nature of (big) data may require deep introspective statistical and machine learning techniques, but these statistical tools often fail when applied without first understanding the data. In small datasets, this often isn't a big issue, but when dealing with large scale data analysis or big data thoroughly inspecting each dimension typically yields an O(n^n-1) problem. As such, dealing with big data require an alternative toolkit. This package not only identifies the mode or modes for various data types, it also provides a programmatic way of understanding the modality (i.e. unimodal, bimodal, etc.) of a dataset (whether it's big data or not). See <http://www.sdeevi.com/modes_package> for examples and discussion.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-modes` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-modes` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
